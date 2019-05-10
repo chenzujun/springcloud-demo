@@ -15,6 +15,7 @@
 		<module>producer1</module>
 		<module>producer2</module>
 		<module>consumer</module>
+		<module>common</module>
 	</modules>
 
 	<parent>
@@ -30,6 +31,11 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 		<fastjson.version>1.2.45</fastjson.version>
+        <poi-ooxml.version>3.16</poi-ooxml.version>
+		<commons-beanutils.version>1.8.3</commons-beanutils.version>
+		<guava.version>23.0</guava.version>
+		<easyexcel.version>1.1.1</easyexcel.version>
+        <xerces.version>2.11.0</xerces.version>
 	</properties>
 
 	<dependencies>
@@ -60,6 +66,35 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+        <!-- excel -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi-ooxml.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
+			<version>${easyexcel.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>${xerces.version}</version>
+        </dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>${commons-beanutils.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
 		</dependency>
 	</dependencies>
 
